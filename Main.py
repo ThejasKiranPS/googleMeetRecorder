@@ -59,7 +59,7 @@ time.sleep(6)
 #element = browser.find_element_by_class_name('CwaK9')
 #browser.execute_script("arguments[0].click();", element)
 browser.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[9]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span/span').click()
-time.sleep(3)
+time.sleep(6)
 flag = True
 element_listb = browser.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[9]/div[3]/div[1]/div[3]/div/div[2]/div[1]/span/span')
 element_listb.click()
