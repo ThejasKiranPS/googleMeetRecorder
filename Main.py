@@ -40,7 +40,7 @@ options.add_experimental_option("prefs", { \
     "profile.default_content_setting_values.media_stream_camera": 2,
      "profile.default_content_setting_values.notifications": 2
   })
-browser = webdriver.Chrome(chrome_options=options, executable_path="/Users/amalpaul/node_modules/chromedriver/lib/chromedriver/chromedriver")
+browser = webdriver.Chrome(chrome_options=options)
 browser.maximize_window()
 browser.get(f"https://accounts.google.com/AccountChooser/identifier?continue=https%3A%2F%2Fmeet.google.com%2F{url_meet}&hl=en&flowName=GlifWebSignIn&flowEntry=AccountChooser")
 username = browser.find_element_by_id('identifierId')
