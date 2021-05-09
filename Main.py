@@ -30,8 +30,8 @@ def check_participants(participants_list):
 
 
 
-usernameStr = '2024csechristengg@gmail.com'
-passwordStr = '@DuAo&h8797zPH'
+usernameStr = 'Enter Your Mail Address Here'
+passwordStr = 'Enter Your Password'
 url_meet = 'nsm-xovs-nuf'
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-infobars")
