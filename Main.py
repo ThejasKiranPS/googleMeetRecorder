@@ -16,6 +16,15 @@ from datetime import datetime
 # MAIL & PASSWORD (THE MAIL U WILL USE TO ENTER TO THE MEET)
 
 
+usernameStr = 'Enter Your Mail Address Here'
+passwordStr = 'Enter Your Password'
+
+def setLoginDetails(emailId, password):
+  global usernameStr
+  global passwordStr
+  usernameStr = emailId
+  passwordStr = password
+
 def check_participants(participants_list):
   print(f"{participants_list}")
   with open("list.csv", 'r', encoding = 'utf-8') as f:
@@ -30,8 +39,6 @@ def check_participants(participants_list):
 
 
 
-usernameStr = 'Enter Your Mail Address Here'
-passwordStr = 'Enter Your Password'
 url_meet = 'nsm-xovs-nuf'
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-infobars")
